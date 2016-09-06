@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania&effect=fire')
+
+*
+  transition all .25s ease
+
+
+.profile-name h1
+  font-family    'Metal Mania', cursive
+  border-radius  10px 0 0 0
+  padding        5px
+  text-transform uppercase
+  border         10px solid #fff
+  border-right   none
+  border-bottom  none
+
+  @media(max-width 551px)
+    border none
+
+.profile-badges
+  top           50%
+  margin-top    -14px
+
+  .badge
+    display       none
+
+  &:after
+    color         #fff
+    content       'OSS'
+    background    #e74c3c
+    display       block
+    border-radius 2px
+    padding       4px
+    animation     change 10s infinite
+
+    @media(max-width 551px)
+      padding 2px
+
+.profile-header
+  background linear-gradient(black, white)
+
+.profile-username
+  color #000
+
+.badge-follows
+  background #000
+  color      #fff !important
+
+@keyframes change
+  0%
+    background #e74c3c
+    color      #fff
+  50%
+    background #fff
+    color      #e74c3c
+  100%
+    background #e74c3c
+    color      #fff
