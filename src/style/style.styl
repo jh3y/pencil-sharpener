@@ -32,6 +32,52 @@
     @media(max-width 551px)
       padding 2px
 
+#profile-following
+.promo-footer
+  display none
+
+#profile-followers
+  &:hover
+    #followers-count
+      &:after
+        color #fff
+  span
+    text-transform lowercase
+
+#followers-count
+  &:after
+    transition all .25s ease
+    color  #8A8A8A
+    content ' Awesome '
+
+#hire-me-button
+  position relative
+  width    80px
+  overflow hidden
+
+  &:after
+    content 'Reach out!'
+    width   100%
+    position absolute
+    top 0
+    left 0
+    color #fafafa
+    background #000
+    line-height 18px
+    transition all .5s ease
+
+  &:hover
+    &:after
+      transform translateX(100%)
+      background #fff
+      color      #000
+
+@keyframes pulse
+  from
+    transform scale(1)
+  to
+    transform scale(1.05)
+
 .profile-header
   background linear-gradient(black, white)
 
